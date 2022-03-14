@@ -1,0 +1,286 @@
+
+
+/*#################################################*/
+/*###                   Colors                 ####*/
+/*#################################################*/
+
+.blue-low {
+	background: #D4F0FF;
+}
+
+.blue-middle {
+	background: #3D62FC;
+}
+
+.gray {
+	background: #F1F1F1;
+}
+
+.withe {
+	background: white;
+}
+
+/*#################################################*/
+/*###                   Tags                 ####*/
+/*#################################################*/
+header {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+}
+
+button {
+	background    : #3D62FC;
+	border-radius : 5px;
+	color         : white;
+	font-family   : Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+	font-size     : 20px;
+	padding       : 10px 15px;
+	border        : none;
+}
+
+/*#################################################*/
+/*###                   Class                  ####*/
+/*#################################################*/
+.div-header {
+	width: 50%;
+	height: 150px;
+}
+
+.label-title {
+	font-size: 25px;
+	font-family : "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	margin      : 20px;
+}
+
+.title {
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial;
+	font-size: 40px;
+	color: #00188F;
+}
+
+.dis-flex {
+	display: flex;
+}
+
+.con-campania {
+	width: 50%;
+	height: 1200px;
+}
+
+.img-logo {
+	padding: 20px;
+	min-width: 200px;
+	max-width: 400px;
+}
+
+.color-blue-middle {
+	color: #3D62FC;
+} 
+.icon{
+	width: 40px;
+	height: 40px;
+}
+
+.item-txt-schedule {
+	color: #3D62FC;
+	font-size: 30px;
+	margin: 20px;
+}
+
+.each-beneficio {
+	display         : flex;
+	width: 300px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: bottom;
+	box-shadow: 3px 3px 3px #D4F0FF;
+}
+.b-img{
+	width: 50px;
+	height: 50px;
+}
+
+.b-p {
+  /*display: inline-block;*/
+  vertical-align: top;
+  max-width: 140px;
+  text-align: center;
+}
+
+.con-preracion {
+	width: 50%;
+	height: 1200px;
+	border-radius: 20px;
+}
+
+.each-con-preparacion {
+	height: 33.3%;
+	text-align: center;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.p-preparacion {
+	font-size: 20px;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;	
+}
+
+/*#################################################*/
+/*###                     ID                   ####*/
+/*#################################################*/
+#vacunacion {
+	position: relative;
+	margin: 50px 40px;
+}
+
+#con-titles {
+	position : absolute;
+	top      : 60px;
+	left     : 800px;
+}
+
+#con-img-campania {
+	display         : flex;
+	justify-content : center;
+	align-items     : bottom;
+}
+
+#div-triangle {
+	width        : 0; 
+	height       : 0; 
+	border-left  : 100px solid transparent;
+	border-right : 100px solid transparent;
+	border-top   : 100px solid #F1F1F1;
+}
+
+
+#text-campania {
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+	font-size: 20px;
+}
+
+#con-logos {
+	opacity: 0.1;
+	width: 100%;
+	justify-content : center;
+	align-items     : center;
+}
+
+#con-schedules {
+	position: absolute;
+	top: 900px;
+	left: 100px;
+	width: 1200px;
+	height: 300px;
+}
+
+#schedules-opciti {
+	position: relative;
+	top: 20px;
+	left: 60px;
+	width: 70%;
+	height: 70%;
+	opacity: 0.6;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px #aaaaaa;
+
+}
+
+#schedules {
+	position: absolute;
+	top: 120px;
+	left: 70px;
+	width: 800px;
+	height: 150px;
+	align-items: center;
+	justify-content: center;
+	align-self: 30px;
+	gap: 50px;
+}
+
+#con-why{
+/*	background: red;*/
+	width: 100%;
+	/*height: 250px;*/
+	padding: 40px;
+}
+
+#title-why{
+	font-size: 60px;
+}
+
+#p-why {
+	font-size: 20px;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+#con-beneficios {
+	/*width: 100%;*/
+	/*height: 400px;*/
+	align-content: center;
+	justify-content: center;
+	gap: 80px;
+}
+
+#con-preracion-left {
+	display         : flex;
+	justify-content : center;
+	align-items     : bottom;
+	background: linear-gradient(180deg, #FFFFFF 50%, #3D62FC 50%);
+}
+#con-preracion-rigth {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 20px;
+	margin: 15px;
+}
+
+#img-beneficios {
+	position: relative;
+	margin: 400px 100px 0px 100px;
+	/*top: 300px;*/
+	/*width: 600px;*/
+	/*height: 500px;*/
+}
+
+#label-preparacion {
+	border: 50px;
+}
+
+#final-rigth{
+	display         : flex;
+	justify-content : center;
+	align-items     : bottom;
+	background: linear-gradient(180deg, #FFFFFF 50%, #3D62FC 50%);	
+}
+
+#final-left {
+	display: flex;
+	flex-direction: column;
+}
+
+#final-left-top{
+	width: 100%;
+	height: 30%;
+	background: red;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 20px;
+	justify-content: center;
+
+}
+
+#final-left-bottom{
+	width: 100%;
+	height: 70%;
+	background: blue;
+	display: flex;
+	flex-direction: column;
+}
