@@ -9,7 +9,7 @@
 <body>
 	<header>
 		<div class="div-header">
-			<h1 id="vacunacion">Vacunación Covid</h1>
+			<h1 id="vacunacion" class="item-txt-schedule" style="font-size: 50px;">Vacunación Covid</h1>
 		</div>
 		<div class="div-header blue-low"></div>	
 	</header>
@@ -42,11 +42,11 @@
 			<!-- <span class="get-icon" style="--get-icon: '../icons/map.png';">sdfsd</span> -->
 			<!-- <span class="get-icon">sdfsd</span> -->
 
-			<h2 class="color-blue-middle">Calendario de Vacunación</h2>
+			<h1 class="color-blue-middle" style="font-size: 30px;">Calendario de Vacunación</h1>
 			<div id="schedules-opciti" class="withe dis-flex">
 			</div>
 			
-			<div id="schedules" class="dis-flex">
+			<div id="schedules">
 				<div>
 					<img class="icon" src="assets/icons/map.png">
 					<label class="item-txt-schedule">Estado</label><br>
@@ -57,14 +57,14 @@
 				<div>
 					<img class="icon" src="assets/icons/date.png">
 					<label class="item-txt-schedule">Fecha</label><br>
-					<label class="item-txt-schedule" style="color: black;">Veracruz</label>
+					<label class="item-txt-schedule" style="color: black;">10-03-2022</label>
 					
 				</div>
 
 				<div>
 					<img class="icon" src="assets/icons/inyection.png">
 					<label class="item-txt-schedule">Fecha</label><br>
-					<label class="item-txt-schedule" style="color: black;">Veracruz</label>
+					<label class="item-txt-schedule" style="color: black;">AztraZeneca</label>
 					
 				</div>
 				<button>Ver más</button>
@@ -83,9 +83,9 @@
 		</div>
 	</section>
 
-	<!-- Por que -->
+	<!-- Beneficios -->
 	<section id="con-why">
-		<h1 id="title-why">¿Por deberías vacunarte?</h1>
+		<h1 id="title-why" class="item-txt-schedule">Beneficios de las vacunas</h1>
 		<p id="p-why">
 			A continuación se muestras los beneficios que se obtiene con las vacunas vs el Covid-19
 		</p>
@@ -93,25 +93,25 @@
 		<br>
 		<div id="con-beneficios" class="dis-flex">
 			<div class="each-beneficio">
-				<img class="b-img" src="assets/icons/beneficio_1.png"><br>
+				<img class="b-img icon" src="assets/icons/beneficio_1.png"><br>
 				<label class="b-label">Minimiza los riesgos de muerte</label>
 				<p class="b-p">La Dra. Tania Zertuche, especialista en medicina interna de TecSalud señala que las vacunas disponibles en la actualidad ayudan a que las personas no desarrollen la enfermedad grave de COVID en caso de contagio.</p>
 			</div>
 
 			<div class="each-beneficio">
-				<img class="b-img" src="assets/icons/beneficio_2.png"><br>
+				<img class="b-img icon" src="assets/icons/beneficio_2.png"><br>
 				<label class="b-label">Forma de anticuerpos</label>
 				<p class="b-p">Vacunarse es más seguro que contraer el COVID-19, y se recomienda la vacunación contra el COVID-19 para todas las personas de 5 años de edad o más. Si una persona ya tuvo COVID-19, la vacunación contra el COVID-19 aumenta la respuesta de anticuerpos de su organismo, lo que mejora la protección.</p>
 			</div>
 
 			<div class="each-beneficio">
-				<img class="b-img" src="assets/icons/beneficio_3.png"><br>
+				<img class="b-img icon" src="assets/icons/beneficio_3.png"><br>
 				<label class="b-label">Evita la enfermedad grave</label>
 				<p class="b-p">Se ha detectado que algunas vacunas son capaces de evitar el contagio, sin embargo, lo que sí aseguran todas ellas en más de un 50% (mínimo requerido por la Organización Mundial de la Salud) es prevenir la enfermedad grave.</p>
 			</div>
 
 			<div class="each-beneficio">
-				<img class="b-img" src="assets/icons/beneficio_4.png"><br>
+				<img class="b-img icon" src="assets/icons/beneficio_4.png"><br>
 				<label class="b-label">Bienestar y tranquilidad psicológicos</label>
 				<p class="b-p">Además del impacto positivo en la salud de las personas, el inmunizarse contra el COVID, puede traer a las personas una mayor tranquilidad en el aspecto psicológico, señala la Dra. Graciela Medina, coordinadora en el área de Psicología Clínica en TecSalud.</p>
 			</div>
@@ -119,7 +119,8 @@
 		</div>
 	</section>
 
-	<section class="dis-flex">
+	<!-- Preparación -->
+	<section class="dis-flex" style="margin-top: 70px;">
 		<div class="con-preracion" id="con-preracion-left">
 			<img id="img-beneficios" src="assets/img/enfermera_2.png">
 		</div>
@@ -146,21 +147,105 @@
 			</div>
 		</div>
 	</section>
-		
-	<section class="dis-flex">
+	
+	<!-- Contactos -->
+	<section class="dis-flex" style="margin-top: 70px;">
 		<div class="con-preracion" id="final-left">
 			<div id="final-left-top">
-				<label class="title">Contacto de Emergencia</label>
+				<h1 class="title">Contacto de Emergencia</h1>
 				<p class="p-preparacion">Si tienes un familiar o conocido con sintomas de covid, <br>no dudes en ponerte en contacto con nosotro estamos 24/7 para recibir llamadas</p>
 			</div>
 
 			<div id="final-left-bottom">
-				
+				<div class="dis-flex each-final">
+					<img class="icon" src="assets/icons/telephone.png">
+					<div style="text-align: center;">
+						<label class="item-txt-schedule">Telefono</label>
+						<p>271-318-28-39</p>
+					</div>
+					<button class="final-button">LLamar Ahora</button>
+				</div>
+
+				<div class="dis-flex each-final">
+					<img class="icon" src="assets/icons/chat.png">
+					<div style="text-align: center;">
+						<label class="item-txt-schedule">Call Center</label>
+						<p>01800-596-869-485</p>
+					</div>
+					<button class="final-button">Chatear Ahora</button>
+				</div>
+
+				<div class="dis-flex each-final">
+					<img class="icon" src="assets/icons/video-chat.png">
+					<div style="text-align: center;">
+						<label class="item-txt-schedule">Telefono</label>
+						<p>229-613-34-67</p>
+					</div>
+					<button class="final-button">Video LLamada Ahora</button>
+				</div>
+
+				<div class="dis-flex each-final">
+					<img class="icon" src="assets/icons/email.png">
+					<div style="text-align: center;">
+						<label class="item-txt-schedule">Email</label>
+						<p>vacunas@campania.com</p>
+					</div>
+					<button class="final-button">LLama Ahora</button>
+				</div>
+
 			</div>
 		</div>
 		<div class="con-preracion" id="final-rigth">
 			<img id="img-beneficios" src="assets/img/enfermero_3.png">
 		</div>
 	</section>
+
+	<footer>
+		<div class="foo-div foo-div-top" id="foo-div-top-left" style="text-align: left;">
+			<h1 class="item-txt-schedule">Vacunación<h1>
+			<p class="p-preparacion" style="color: gray;">Si todos nos vacunamos<br>salvaremos muchas vidas al<br>rededor del mundo,<br>se parte de este gran movimiento</p>
+		</div>
+
+		<div class="foo-div foo-div-top" id="foo-div-top-right">
+			<div class="each-foo-div-top-right">
+				<label class="item-txt-schedule">Acerca</label>
+				<ul>
+					<li><label class="label-title" style="font-size: 15px; margin: 0px; margin-top: 15px;">Acerca de nosotros</label></li>
+					<li><label class="label-title" style="font-size: 15px; margin: 0px; margin-top: 15px;">Caracteristicas</label></li>
+					<li><label class="label-title" style="font-size: 15px; margin: 0px; margin-top: 15px;">Noticias</label></li>
+				</ul>
+			</div>
+			
+			<div class="each-foo-div-top-right">
+				<label class="item-txt-schedule">Patrocinadores</label>
+				<ul>
+					<li><label class="label-title" style="font-size: 15px; margin: 0px; margin-top: 15px;">AztraZeneca</label></li>
+					<li><label class="label-title" style="font-size: 15px; margin: 0px; margin-top: 15px;">Grupo Salinas</label></li>
+					<li><label class="label-title" style="font-size: 15px; margin: 0px; margin-top: 15px;">Grupo Mercantil</label></li>
+				</ul>
+			</div>
+
+			<div class="each-foo-div-top-right">
+				<label class="item-txt-schedule">Ayuda</label>
+				<ul>
+					<li><label class="label-title" style="font-size: 15px; margin: 0px; margin-top: 15px;">FAQs</label></li>
+					<li><label class="label-title" style="font-size: 15px; margin: 0px; margin-top: 15px;">Contactanos</label></li>
+					<li><label class="label-title" style="font-size: 15px; margin: 0px; margin-top: 15px;">Sopote Call Center</label></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="foo-div foo-div-bottom">
+			<label>2022 Todos los derechos reservados</label>
+			
+		</div>
+
+		<div class="foo-div foo-div-bottom" style="text-align: right;">
+			<label style="margin-right: 20px;">Terminos y condiciones Privacidad y politica</label>
+		</div>
+
+
+
+	</footer>
 </body>
 </html>
