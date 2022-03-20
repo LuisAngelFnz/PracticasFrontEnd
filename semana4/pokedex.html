@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/pokedex.css">
+</head>
+<body>
+    <section>
+        <div class="cont-header">
+            <img src="assets/img/logo-pokemon.png" width="150">
+                
+            <input id="get-name" type="text" name="nombrePokemon" placeholder="Escribe el nombre de tu pokemon">
+            
+            <button id="btn-pokebola" type="submit" onclick="search_pokemon()">
+                <div class="circle-pokebola"></div>
+            </button>
+
+        </div>
+        <div class="cont-pokedex">
+            <div id="pokedex-left">
+                <div class="pokedex-left-top">
+                    <div style="position: relative;">
+                        <div class="circle p-l-t-l-circle-gray"></div>
+                        <div class="circle p-l-t-l-circle-blue"></div>
+                        <div class="circle p-l-t-l-circle-blue-low"></div>
+                        <div class="p-l-t-r-container">
+                            <div class="circle p-l-t-r-circle" style="background-color: red;"></div>
+                            <div class="circle p-l-t-r-circle" style="background-color: #F2BD22;"></div>
+                            <div class="circle p-l-t-r-circle" style="background-color: green;"></div>
+                        </div>
+
+                    </div>
+                    <svg class="pokedex-left-svg">
+                        <polyline points="0,100 100,100 150,55 400,55"/>
+                    </svg>
+                </div>
+                
+                <div class="pokedex-left-middle">
+                    <div class="p-l-m-container">
+                        <div class="p-l-m-c-top">
+                            <div class="circle p-l-m-c-circle" style="background-color: red;"></div>
+                            <div class="circle p-l-m-c-circle" style="background-color: red;"></div>
+                        </div>
+                        
+                        <div class="p-l-m-c-middle">
+                            <img id="img-pokemon">    
+                        </div>
+                        
+                        <div class="p-l-m-c-bottom">
+                            
+                            <div class="circle p-l-m-c-b-circle">
+                                <div class="circle p-l-m-c-b-c-circle"></div>
+                            </div>
+                            
+                            <img src="assets/icons/menu.png" class="p-l-m-c-b-c-img"></img>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pokedex-left-bottom">
+                    <div class="p-l-b-l">
+                        <div class="p-l-b-l-t">
+                            <div class="circle p-l-b-l-t-lever"></div>
+                            <div class="p-l-b-l-t-light" style="background-color: red;"></div>
+                            <div class="p-l-b-l-t-light" style="background-color: skyblue;"></div>
+                        </div>
+
+                        <div class="p-l-b-l-b">
+                            <div class="p-l-b-l-b-l">
+                                <div class="circle p-l-b-l-b-l-circle"></div>
+                                <div class="circle p-l-b-l-b-l-circle"></div>
+
+                            </div>
+
+                            <div class="p-l-b-l-b-r">
+                                <div  class="p-l-b-l-b-r-text">
+                                    <label id="set-name" class="poke-font"></label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="p-l-b-r">
+                        <div class="p-l-b-r-t">
+                            <div class="p-l-b-r-t-row-vertical"></div>
+                            <div class="p-l-b-r-t-row-horizontal">
+                                <div class="p-l-b-r-t-rh-square"></div>
+                                <div class="circle p-l-b-r-t-rh-circle"></div>
+                            </div>
+                        </div>
+
+                        <div class="p-l-b-r-b">
+                            <div class="circle p-l-b-r-b-circle-1"></div>
+                            <div class="circle p-l-b-r-b-circle-2"></div>
+                            <div class="circle p-l-b-r-b-circle-2"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="pokedex-rigth">
+                <div class="pokedex-rigth-top">
+                    <svg class="pokedex-left-svg">
+                                   <!-- 0,100 100,100 150,55 400,55 -->
+                        <polyline
+                            points="0,0 0,55 180,55 230,100 335,100 335,0 0,0"
+                            style="fill: #ffffff; stroke: none; stroke-width: 3"
+                        />
+                        <polyline
+                            points="0,55 180,55 230,100 335,100"
+                            style="fill: none; stroke: black; stroke-width: 3"
+                        />
+                    </svg>
+                </div>
+
+                <div class="pokedex-rigth-middle">
+                    <div class="p-r-m-container1">
+                        <label class="poke-font" >Altura :</label>
+                        <label id="set-height" class="poke-font"></label><br>
+                        <label class="poke-font">Peso   :</label>
+                        <label id="set-weight" class="poke-font"></label><br>
+                    </div>
+
+                    <div class="p-r-m-container2">
+                        <div class="p-r-m-c2-square"></div>
+                        <div class="p-r-m-c2-square"></div>
+                        <div class="p-r-m-c2-square"></div>
+                        <div class="p-r-m-c2-square"></div>
+                        <div class="p-r-m-c2-square"></div>
+                        <div class="p-r-m-c2-square"></div>
+                        <div class="p-r-m-c2-square"></div>
+                        <div class="p-r-m-c2-square"></div>
+                        <div class="p-r-m-c2-square"></div>
+                        <div class="p-r-m-c2-square"></div>
+                    </div>
+                </div>
+
+                <div class="pokedex-rigth-bottom">
+                    <div class="p-r-b-t">
+                        <div class="p-r-b-t-l">
+                            <div class="p-r-b-t-l-container-circle">
+                                <div class="circle p-r-b-t-l-c-c-circle">
+                                    <div class="circle p-r-b-t-l-c-c-c-c"></div>
+                                </div>
+                                <div class="circle p-r-b-t-l-c-c-circle">
+                                    <div class="circle p-r-b-t-l-c-c-c-c"></div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="p-r-b-t-l-container-square">
+                                <div class="p-r-b-t-l-c-s-square"></div>
+                                <div class="p-r-b-t-l-c-s-square"></div>
+                            </div>
+                        </div>
+
+                        <div class="p-r-b-t-r">
+                            <div class="p-r-b-t-r-t">
+                                <div class="p-r-b-t-r-t-square"></div>
+                                <div class="p-r-b-t-r-t-square"></div>
+                            </div>
+
+                            <div class="p-r-b-t-r-b">
+                                <div class="circle p-r-b-t-r-b-circle">
+                                    <div class="circle p-r-b-t-r-b-c-circle"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="p-r-b-b">
+                        <div class="p-r-b-b-button">
+                            <label id="set-type" class="poke-font"></label>
+                        </div>
+                        <div class="p-r-b-b-button">
+                            <label id="set-number" class="poke-font"></label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="assets/js/pokedex.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
