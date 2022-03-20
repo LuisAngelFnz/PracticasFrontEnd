@@ -57,14 +57,19 @@ function set_data_pokemon(data_pokemon){
     let name     = document.getElementById('set-name');
     let get_name = document.getElementById('get-name');
     let image    = document.getElementById('img-pokemon');
+    let movement = document.getElementById('set-movement');
+    
 
     height.innerHTML   = data_pokemon.height+' m';
     weight.innerHTML   = data_pokemon.weight+' Kg';
     type.innerHTML     = data_pokemon.types[0].type.name;
     number.innerHTML   = data_pokemon.id;
     name.innerHTML     = data_pokemon.name;
-    image.src          = data_pokemon.sprites.front_default
+    image.src          = data_pokemon.sprites.front_default;
+    movement.innerHTML = data_pokemon.moves[0].move.name;
+    
     get_name.value     = '';
+
     console.log('Set data pokemon OK')
 }
 
@@ -82,13 +87,15 @@ function clear_texts() {
         'set-type',
         'set-number',
         'set-name',
-        'get-name'
+        'get-name',
+        'set-movement'
     ].forEach((id) => {
         let element = document.getElementById(id);
         if(! element){
             console.log(`Not found element: ${id}`);
         }else{
-            element.value = ''
+            element.value = '';
+            element.innerHTML = '';
         }
     });
 
